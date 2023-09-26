@@ -1,0 +1,17 @@
+﻿<Window x:Class="koostava_marialintunen.puujalkaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:koostava_marialintunen"
+        mc:Ignorable="d"
+        Title="puujalkaWindow" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox x:Name="OtsikkoBox" HorizontalAlignment="Left" Margin="66,55,0,0" TextWrapping="Wrap" Text="Hae päivän puujalkavitsi!" VerticalAlignment="Top" Width="334" Height="34" FontSize="22"/>
+        <Button x:Name="randomButton" Content="Hae!" Background="#FFDCAE5C" HorizontalAlignment="Left" Margin="415,55,0,0" VerticalAlignment="Top" Height="34" Width="186" FontSize="20" Click="randomButton_Click"/>
+        <TextBox x:Name="VitsiTextBox" HorizontalAlignment="Left" Margin="66,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="535" Height="108" FontSize="16"/>
+        <TextBox x:Name="omaVitsiBox" HorizontalAlignment="Left" Height="131" Margin="66,277,0,0" TextWrapping="Wrap" Text="Eikö löytynyt mieluista? Kirjoita oma vitsisi!" VerticalAlignment="Top" Width="334" FontSize="22"/>
+        <Button x:Name="tallennaButton" Content="Tallenna!" HorizontalAlignment="Left" Height="37" Margin="415,277,0,0" VerticalAlignment="Top" Width="186" Background="#FFDCAE5C" FontSize="20" Click="TallennaButton_Click"/>
+
+    </Grid>
+</Window>

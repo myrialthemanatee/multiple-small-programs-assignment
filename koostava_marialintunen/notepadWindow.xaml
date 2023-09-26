@@ -1,0 +1,32 @@
+﻿<Window x:Class="koostava_marialintunen.notepadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:koostava_marialintunen"
+        mc:Ignorable="d"
+        Title="Notepad" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open" Click="MenuItem_Click"/>
+                <MenuItem x:Name="saveButton" Header="_Save" Click="saveButton_Click"/>
+                <Separator/>
+                <MenuItem x:Name="Print" Header="_Print" Click="Print_Click"/>
+                <Separator/>
+                <MenuItem x:Name="Exit" Header="_Exit" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Copy" Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="_Paste" Command="ApplicationCommands.Paste"/>
+            </MenuItem>
+            <MenuItem Header="_Format">
+                <MenuItem x:Name="fontButton" Header="_Font" Click="fontButton_Click"/>
+            </MenuItem>
+
+        </Menu>
+        <Grid>
+            <TextBox x:Name="notepadTextBox" AcceptsReturn="True"/>
+        </Grid>
+    </DockPanel>
+</Window>

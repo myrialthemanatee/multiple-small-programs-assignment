@@ -1,0 +1,16 @@
+﻿<Window x:Class="koostava_marialintunen.olympiarenkaatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:koostava_marialintunen"
+        xmlns:local1="clr-namespace:koostava_marialintunen"
+        mc:Ignorable="d"
+        Title="olympiarenkaatWindow" Height="450" Width="800">
+    <Grid>
+        <local1:MyCanvas x:Name="OlympiaCanvas" Margin="0,0,91,0"/>
+        <Button x:Name="scatterButton" Content="Scatter" HorizontalAlignment="Left" Margin="714,41,0,0" VerticalAlignment="Top" Height="45" Width="65" Click="scatterButton_Click"/>
+
+    </Grid>
+</Window>
+
